@@ -1,6 +1,8 @@
 import Announcement from "./components/Announcement"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
+import Rand from "./components/Rand"
+import Slider from "./components/Slider"
 
 function App() {
 
@@ -9,6 +11,7 @@ function App() {
       <Header />
       <Hero />
       <Announcement />
+      <Slider />
     </>
   )
 }

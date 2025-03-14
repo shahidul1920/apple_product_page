@@ -1,17 +1,19 @@
-import { Play, Target } from "lucide-react";
-import React from "react";
+import { Play } from "lucide-react";
+import React, { useRef } from "react";
 import {motion, useScroll, useTransform} from 'framer-motion';
 
 export default function Announcement() {
 
-    const { scrollYProgress } = useScroll({
-      offset: ["start end", "end end"],
-    })
-    const scaleY = useTransform(scrollYProgress, [0,1], [0.5, 1])
+  const contRef = useRef(null);
+
+  const {scrollYProgress} = useScroll();
+  
+  const scale = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
+
 
   return (
-    <div className="container mx-auto">
-      <motion.section style={{scaleY:scaleY}} className="w-full bg-[#FBF7F4] py-16 px-8 flex justify-between items-center rounded-2xl my-40">
+    <div ref={contRef} className="container mx-auto">
+      <motion.section style={{scaleX: scale}} transition={{ease:'easeInOut'}} className="w-full bg-[#FBF7F4] py-16 px-8 flex justify-between items-center rounded-2xl my-40">
         <div className="text">
           <h2 className="font-bold text-4xl mb-4">
             See the new <br /> Mac mini in action
