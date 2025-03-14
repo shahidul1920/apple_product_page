@@ -1,3 +1,4 @@
+import Announcement from "./components/Announcement"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Announcement />
     </>
   )
 }
