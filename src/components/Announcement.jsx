@@ -20,7 +20,7 @@ export default function Announcement() {
           </h2>
           <p className="text-blue-500 flex gap-4">
             <a href="#" className="flex text-[16px] items-center">Watch the Announcement <Play size={18} /></a>
-            <a href="#" className="flex text-[16px] items-center"> Watch in ASL <Play size={18} /></a>
+            <a href="#" className="flex text-[16px] items-center"> Watch in ASL Sickkkkkkkk <Play size={18} /></a>
           </p>
         </div>
         <div className="image">
