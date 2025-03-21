@@ -24,7 +24,7 @@ const Slider = () => {
         Get the highlights.
       </h1>
       <section className="overflow-hidden relative rounded-2xl">
-        <div className="flex h-[700px] gap-4 transition-transform duration-1000 ease-in-out">
+        <div ref={slideRef} className="flex h-[700px] transition-transform duration-1000 ease-in-out">
           {images.map((image, i) => (
             <div
               key={i}
@@ -40,9 +40,15 @@ const Slider = () => {
         </div>
       </section>
       <div className="slider-nav flex items-center justify-center p-8 rounded-full bg-[#FBF7F4] max-w-[230px] mx-auto gap-5 my-6">
-        <div className="slider-nav-item size-[14px] bg-[#292A2E] rounded-full block" />
-        <div className="slider-nav-item size-[14px] bg-[#292A2E] rounded-full block" />
-        <div className="slider-nav-item size-[14px] bg-[#292A2E] rounded-full block" />
+        {images.map((_, i) => (
+          <div
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`slider-nav-item size-[14px] bg-[#292A2E] rounded-full block ${
+              current === i ? "bg-[#FFD302]" : ""
+            }`}
+          />
+        ))}
       </div>
     </div>
   );
