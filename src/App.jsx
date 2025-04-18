@@ -1,4 +1,5 @@
 import Announcement from "./components/Announcement"
+import FeatureSec from "./components/FeatureSec"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Rand from "./components/Rand"
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Announcement />
       <Slider />
+      <FeatureSec />
     </>
   )
 }
