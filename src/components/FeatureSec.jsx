@@ -19,7 +19,7 @@ const FeatureSec = () => {
           </p>
         </div>
 
-        <div className="botto-sec grid grid-cols-2 relative place-items-center">
+        <div className="botto-sec grid grid-cols-2 relative w-full h-[400px] place-items-center">
           <div className="bottm-image absolute grid place-items-center -top-[200px]">
             <img
               className="w-full h-[700px] rounded-2xl mt-[3rem] object-contain"
@@ -35,14 +35,32 @@ const FeatureSec = () => {
           </div>
 
           <div className="sideInfo absolute right-[230px] top-[120px] max-w-[300px]">
-
-            <h2 className="text-4xl font-bold"><span className="text-[#147d89]">1/20</span> the size yet up to <span className="text-[#147d89]">6x</span> faster</h2>
+            <h2 className="text-4xl font-bold">
+              <span className="text-[#147d89]">1/20</span> the size yet up to{" "}
+              <span className="text-[#147d89]">6x</span> faster
+            </h2>
             <p className="text-[#57585e] text-xl font-medium mt-[1rem]">
-                compared with the top-selling PC desktop in its price range.3
+              compared with the top-selling PC desktop in its price range.3
             </p>
           </div>
         </div>
       </section>
+
+      <div className="bg-[#F5F5F7] py-[8rem]">
+        <section className="container mx-auto grid grid-cols-1 xl:grid-cols-2 place-items-center gap-10 text-center">
+          <div className="left grid place-items-center gap-4">
+            <h2 className="text-4xl font-bold">2x USB-C Headphone jack</h2>
+            <img src="./front-mac.jpg" alt="" />
+            <h4 className="text-xl font-medium text-[#57585E]">Front Ports</h4>
+          </div>
+
+          <div className="right grid place-items-center gap-4">
+            <h2 className="text-4xl font-bold">HDMI Ethernet 3x Thunderbolt</h2>
+            <img src="./back-mac.jpg" alt="" />
+            <h4 className="text-xl font-medium text-[#57585E]">Back Ports</h4>
+          </div>
+        </section>
+      </div>
     </div>
   );
 };
