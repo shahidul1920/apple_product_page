@@ -61,6 +61,22 @@ const FeatureSec = () => {
           </div>
         </section>
       </div>
+
+      <div className="bg-[#F5F5F7]">
+        <section className="container mx-auto my-[8rem] flex flex-col items-center justify-center py-[6rem]">
+            <div className="top flex-1">
+                <h2 className="text-6xl font-black mb-[1rem]">
+                    Built to <span className="text-[#147d89]">chill</span>
+                </h2>
+                <p className="text-[#57585e] text-xl font-medium max-w-[700px] mt-[1rem]">
+                Putting this much power in such a small space took a whole new thermal architecture. Within Mac mini, air is guided to different levels of the system, and all of it flows through the foot. Combined with Apple silicon’s unmatched power efficiency, this allows Mac mini to breeze through intensive workloads at outrageous speeds. It’s calm, cool, and perfected.
+                </p>
+            </div>
+            <div className="bottom-image flex-1">
+                <img className="w-full h-[700px] rounded-2xl mt-[3rem] object-contain" src="./design_thermal_stati-mac.jpg" alt="" />
+            </div>
+        </section>
+      </div>
     </div>
   );
 };
