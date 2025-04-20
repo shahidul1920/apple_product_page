@@ -73,7 +73,7 @@ const FeatureSec = () => {
                 </p>
             </div>
             <div className="bottom-image flex-1">
-                <img className="w-full h-[700px] rounded-2xl mt-[3rem] object-contain" src="./design_thermal_stati-mac.jpg" alt="" />
+                <img className="w-full max-h-[700px] rounded-2xl mt-[3rem] object-contain" src="./design_thermal_stati-mac.jpg" alt="" />
             </div>
         </section>
       </div>
