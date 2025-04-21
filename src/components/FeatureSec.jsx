@@ -1,3 +1,4 @@
+import { ArrowBigLeft, MoveRight } from "lucide-react";
 import React from "react";
 
 const FeatureSec = () => {
@@ -63,18 +64,94 @@ const FeatureSec = () => {
       </div>
 
       <div className="bg-[#F5F5F7]">
-        <section className="container mx-auto my-[8rem] flex flex-col items-center justify-center py-[6rem]">
-            <div className="top flex-1">
-                <h2 className="text-6xl font-black mb-[1rem]">
-                    Built to <span className="text-[#147d89]">chill</span>
-                </h2>
-                <p className="text-[#57585e] text-xl font-medium max-w-[700px] mt-[1rem]">
-                Putting this much power in such a small space took a whole new thermal architecture. Within Mac mini, air is guided to different levels of the system, and all of it flows through the foot. Combined with Apple silicon’s unmatched power efficiency, this allows Mac mini to breeze through intensive workloads at outrageous speeds. It’s calm, cool, and perfected.
+        <section className="container mx-auto my-[8rem] flex flex-col items-center justify-center py-[6rem] text-center">
+          <div className="top flex-1">
+            <h2 className="text-6xl font-black mb-[1rem]">
+              Built to <span className="text-[#147d89]">chill</span>
+            </h2>
+            <p className="text-[#57585e] text-xl font-medium max-w-[700px] mx-auto mt-[1rem]">
+              Putting this much power in such a small space took a whole new
+              thermal architecture. Within Mac mini, air is guided to different
+              levels of the system, and all of it flows through the foot.
+              Combined with Apple silicon’s unmatched power efficiency, this
+              allows Mac mini to breeze through intensive workloads at
+              outrageous speeds. It’s calm, cool, and perfected.
+            </p>
+          </div>
+          <div className="bottom-image flex-1">
+            <img
+              className="w-full max-h-[700px] rounded-2xl mt-[3rem] object-contain"
+              src="./design_thermal_stati-mac.jpg"
+              alt=""
+            />
+          </div>
+        </section>
+      </div>
+
+      <div className="bg-[#F5F5F7] py-[8rem]">
+        <section className="container mx-auto grid place-items-center gap-10 text-center">
+          <div className="top">
+            <h2 className="text-6xl font-black mb-[1rem]">
+              Designed to make <br /> a difference.
+            </h2>
+            <p className="text-[#57585e] text-xl font-medium max-w-[700px] mx-auto mt-[1rem]">
+              What matters to you matters to Apple, too. From using more
+              recycled content that minimizes environmental impact. To privacy
+              protections that give you more control over your data. To creating
+              built‑in features that make Mac accessible to all.
+            </p>
+          </div>
+
+          <div className="w-2/3 bottom grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[4rem] text-left">
+            <div className="card text-xl font-bold text-[#57585e] grid gap-4">
+              <div>
+                <img src="./icn-leaf.png" alt="" />
+              </div>
+              <div className="p">
+                <p>
+                Mac mini has a compact, material-efficient design. And it’s the first carbon neutral Mac.
                 </p>
+              </div>
+              <div className="btn">
+                <button className="text-blue-400 rounded-lg text-left p-0 m-0 flex gap-2 items-center">
+                <p>More on Apple and the environment</p> <MoveRight />
+                </button>
+              </div>
             </div>
-            <div className="bottom-image flex-1">
-                <img className="w-full max-h-[700px] rounded-2xl mt-[3rem] object-contain" src="./design_thermal_stati-mac.jpg" alt="" />
+
+            <div className="card text-xl font-bold text-[#57585e] grid gap-4">
+              <div>
+                <img src="./icn-lock.png" alt="" />
+              </div>
+              <div className="p">
+                <p>
+                Privacy is a fundamental human right. Which is why we design our products and services to protect it.
+                </p>
+              </div>
+              <div className="btn">
+                <button className="text-blue-400 rounded-lg text-left p-0 m-0 flex gap-2 items-center">
+                  <p>More on Apple and privacy</p> <MoveRight />
+                </button>
+              </div>
             </div>
+
+            <div className="card text-xl font-bold text-[#57585e] grid gap-4">
+              <div>
+                <img src="./accs.png" alt="" />
+              </div>
+              <div className="p">
+                <p>
+                The best technology works for everyone. That’s why our products and services are inclusive by design.
+                </p>
+              </div>
+              <div className="btn">
+                <button className="text-blue-400 rounded-lg text-left p-0 m-0 flex gap-2 items-center">
+                  <p>More on built-in accessibility features</p> <MoveRight />
+                </button>
+              </div>
+            </div>
+
+          </div>
         </section>
       </div>
     </div>
